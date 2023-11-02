@@ -1,0 +1,397 @@
+body {
+    background-color: #c8daff;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    transform: translate(-30%, -80%);
+    left: 40%;
+    top: 90%;
+}
+
+.cat {
+    background-color: #EF9595;
+    height: 65px;
+    width: 80px;
+    border-radius: 0 80px 80px 0;
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+}
+
+.ear {
+    height: 15px;
+    width: 15px;
+    background-color: #EF9595;
+    position: absolute;
+    bottom: 64px;
+    left: 8px;
+    border-radius: 20px 0 0 0;
+    box-shadow: 25px 0 #EF9595;
+}
+
+.eye,
+.eye:before {
+    height: 7px;
+    width: 10px;
+    border: 2px solid #2c2c2c;
+    position: absolute;
+    border-radius: 0 0 15px 15px;
+    border-top: none;
+}
+
+.eye {
+    top: 18px;
+    left: 15px;
+}
+
+.eye:before {
+    content: "";
+    left: 30px;
+}
+
+.nose {
+    background-color: #ffffff;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    left: 25px;
+    box-shadow: 12px 0 #ffffff;
+}
+
+.nose:before {
+    content: "";
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    background-color: #ffffff;
+    left: 6px;
+}
+
+.nose:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 8px solid #ef926b;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: 7px;
+    left: 6px;
+}
+
+.mouth {
+    background-color: #2c2c2c;
+    height: 15px;
+    width: 17px;
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    top: 38px;
+    left: 27px;
+    animation: mouth-move 2s infinite;
+    transform-origin: top;
+}
+
+@keyframes mouth-move {
+    50% {
+        transform: scaleY(0.7);
+    }
+}
+
+.body {
+    background-color: #EF9595;
+    height: 90px;
+    width: 140px;
+    position: absolute;
+    right: 65px;
+    bottom: 0;
+    border-radius: 60px 60px 0 0;
+    animation: sleep 2s infinite;
+    transform-origin: bottom right;
+}
+
+@keyframes sleep {
+    50% {
+        transform: scale(0.9, 1.05);
+    }
+}
+
+.tail {
+    background-color: #EF9595;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.body:before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 12px;
+    width: 30px;
+    border-radius: 6px;
+    bottom: 0;
+    left: 22px;
+    box-shadow: 45px 0 #ffffff;
+}
+
+.bubble {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 65px;
+    top: 20px;
+    border-radius: 50px 50px 50px 5px;
+    animation: bubble-scale 2s infinite;
+}
+
+@keyframes bubble-scale {
+    50% {
+        transform: scale(1.6);
+    }
+}
+
+.shadow {
+    height: 10px;
+    width: 240px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 52px;
+    left: 70px;
+    animation: shadow 2s infinite;
+}
+
+@keyframes shadow {
+    50% {
+        transform: scaleX(0.7);
+    }
+}
+
+
+#swamp { position: absolute; width: 250px; margin: 10% auto 0 auto;
+    transform: translate(-50%, -50%);
+    left: 85%;
+    top: 50%; }
+
+#swamp .lilyPad {
+    position: absolute;
+    background: #324332;
+    width: 35px;
+    height: 70px;
+    border-radius: 50%; 
+    -webkit-transform: skew(-89deg, -82deg) rotate(-41deg) scale(0.05,0.05);
+    -moz-transform: skew(-89deg, -82deg) rotate(-41deg) scale(0.05,0.05);
+    -ms-transform: skew(-89deg, -82deg) rotate(-41deg) scale(0.05,0.05);
+    transform: skew(-89deg, -82deg) rotate(-41deg) scale(0.05,0.05);
+    left: 15%;
+    margin-top: 41%;
+    z-index: 2;
+}
+
+#swamp .lilyPad:after {
+    content: "";
+    background: #324332;
+    width: 35px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 11px;
+    -webkit-transform: rotate(52deg);
+    -moz-transform: rotate(52deg);
+    -ms-transform: rotate(52deg);
+    transform: rotate(52deg);
+}
+
+@keyframes ribbit
+{
+	5% { transform: scale(1.2,1.2); }
+10% { transform: scale(1,1); }
+}
+
+@-webkit-keyframes ribbit /*Safari and Chrome*/
+{
+	10% {  -webkit-transform:scale(1.2,1.2);  }
+15% { -webkit-transform: scale(1,1); }
+}
+
+.frog { position: absolute; left: 0; top: 0; z-index: 2; width: 125px; -webkit-transform: scale(0.8,0.8); -ms-transform: scale(0.8,0.8); -moz-transform: scale(0.8,0.8); transform: scale(0.8,0.8); }
+
+.frog .head { position: relative; z-index: 1; width: 125px; height: 75px; background: #70AF85; border-radius: 100%; }
+
+.frog .left { float: left; }
+.frog .right { float: right; }
+
+.frog .eyef { background: #edd7ac; border: 5px solid #70AF85; width: 40px; height: 40px; border-radius: 100%; position: relative; top: -15px; }
+
+.frog .eyef .inner { position: relative; background: black; width: 20px; height: 20px; border-radius: 100% 100% 100% 100%; }
+
+.frog .nosef {
+    position: relative;
+    background: #607860;
+    border-radius: 100%;
+    top: 25px;
+    left: 50px;
+    width: 10px;
+	height: 10px;
+}
+.frog .nosef:after {
+    content: "";
+    position: absolute;
+    background: #607860;
+    border-radius: 100%;
+    left: 18px;
+    width: 10px;
+	height: 10px;
+}
+
+
+.frog .mouthf { width: 125px; height: 50px; border-bottom: 2px solid #607860; border-radius: 100%; position: relative; top: -15px; }
+
+.frog .bodyf {
+	position: relative; 
+	top: -10px; 
+	width: 125px; 
+	height: 80px; 
+	background: #70AF85; 
+	border-radius: 100%; 
+	animation: ribbit 2s infinite;
+	-webkit-animation: ribbit 2s infinite;
+	-moz-animation: ribbit 2s infinite;}
+.frog .bodyf:after { position: absolute; content: ""; background: #edd7ac; height: 66px; width: 83px; border-radius: 100%; left: 21px; }
+
+.frog .toes { position: relative; width: 20px; height: 20px; background: #edd7ac; border-radius: 100%; }
+.frog .toes:before { position: absolute; left: 20px; bottom: 10px; content: ""; width: 20px; height: 20px; background: #edd7ac; border-radius: 100%; }
+.frog .toes:after { position: absolute; left: -20px; bottom: 10px; content: ""; width: 20px; height: 20px; background: #edd7ac; border-radius: 100%; }
+
+.frog .toes.left { -webkit-transform: rotate(33deg) !important; -ms-transform: rotate(33deg) !important; -moz-transform: rotate(33deg) !important; transform: rotates(33deg) !important; top: -17px; }
+.frog .toes.right { -webkit-transform:rotate(-33deg) !important; -ms-transform: rotate(-33deg) !important; -moz-transform: rotate(-33deg) !important; transform: rotates(-33deg) !important; top: -17px; }
+
+.container2 {
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    transform: translate(-65%, -50%);
+    left: 80%;
+    top: 30%;   
+    z-index:-1;
+}
+
+.headnick {
+    position: absolute;  width: 95px; height: 75px; background: #E08F62; border-radius: 100%;
+    left:10px;
+}
+.ear1nick {
+    height: 35px;
+    width: 20px;
+    background-color: #E08F62;
+    position: absolute;
+    bottom: 64px;
+    left: 35px;
+    border-radius: 20px 0 0 0;
+    box-shadow: 25px 0 #E08F62;
+    top:-15%;
+
+}
+
+.mouthnick{
+width: 75px; height: 50px; border-bottom: 2px solid #000000; border-radius: 100%; position: relative; top: 5px;
+right:-19px;    
+}
+
+.nosenick {
+    background-color: black;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    position: absolute;
+    top: 32px;
+    left: 50px;
+
+}
+
+.item {
+  position: relative;
+  display: inline-block;
+  margin: 0 140px;
+}
+
+.tie {
+  height: 0;
+  width: 15px;
+  position: absolute;
+  top: 8px;
+  left: -105px;
+  border: 15px solid transparent;
+  border-top: 30px solid #010f2c;
+  border-bottom: 180px solid #010f2c;
+  border-radius: 10px 10px 0 0;
+}
+
+.bodynick {
+  height: 40%;
+  width: 65px;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border: 15px solid transparent;
+
+  border-bottom: 180px solid #A7D397;
+  border-radius: 10px 10px 0 0;
+}
+
+.legnick {
+  height: 10%;
+  width: 20px;
+  position: absolute;
+  top: 200px;
+  left: 15px;
+  border: 15px solid transparent;
+
+
+  border-top: 180px solid #866a5f;
+}
+.leg2nick {
+  height: 10%;
+  width: 20px;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  border: 15px solid transparent;
+
+
+  border-top: 180px solid #866a5f;
+}
+
+.eyenick {
+
+    height: 12px;
+    width: 18px;
+    border-radius: 100%;
+    position: absolute;
+    top: 18px;
+    left: 35px;
+    background-color: white;
+}
+
+.eye2nick {
+    background-color: black;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    position: absolute;
+    top: 32px;
+    left: 50px;
+}
+
